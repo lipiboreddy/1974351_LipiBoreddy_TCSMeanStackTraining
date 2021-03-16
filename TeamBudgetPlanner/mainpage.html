@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript" src="programmanager.js"></script>
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+    <header><h1>Main Page</h1></header>
+    <div id="div1">
+        <div id="div2">
+            <h1><a id="a1" href="programmanager.html" onclick="retrieveFromSession()"><u>Program Managers</u></a></h1>
+            <br/>
+            <h1><a id="a2" href="financeteam.html" onclick="retrieveFromSession()"><u>Finance Teams</u></a></h1>
+        </div>
+    </div>
+    <script>
+        retrieveFromSession();
+        storeInSession();
+    </script>
+</body>
+</html>

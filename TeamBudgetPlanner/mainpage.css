@@ -1,0 +1,14 @@
+#div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+}
+
+#div2{
+    border: solid blueviolet 5px;
+    padding: 50px;
+}

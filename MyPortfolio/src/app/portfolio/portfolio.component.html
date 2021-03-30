@@ -1,5 +1,5 @@
 <div class="col-lg-6 offset-lg-3 mt-3 border border-2 border-dark bg-light p-3">
-    <h2>Welcome to your portfolio, {{fName}}</h2>
+    <h2>Welcome to your portfolio</h2>
     <input type="button" value="Log Out" class="btn btn-danger" (click)="logout()">
     <form [formGroup]="contactRef" (ngSubmit)="submitContact()">
         <div class="justify-content-center mb-2 mt-5">
@@ -37,10 +37,7 @@
             <tbody>
                 <tr *ngFor="let row of rows">
                     <td>
-                        {{row.name}}
-                    </td>
-                    <td>
-                        {{row.number}}
+                
                     </td>
                 </tr>
             </tbody>

@@ -1,19 +1,19 @@
 <div>
-    <div id="questionPageHeading" style="color: blue;font-style: italic;font-weight: bolder;"><h1>Online Test Application</h1></div>    
+    <div id="questionPageHeading" style="color: blue;font-style: italic;font-weight: bolder;"><h1>Java Online Test</h1></div>    
         <br/>
         <div class="formDiv">
             
             <form  *ngFor="let ques of questionsData;let i = index" [id]=i+1>
                 <div id="questionForm">
-                <label>{{ques.id}}. {{ques.question}}</label><br/>
+                <label>Object oriented programming means....</label><br/>
                 A.<input  type="radio" [value]="ques.option1" name="option"/>
-                <label> {{ques.option1}}</label><br/>
+                <label> Being objective about what you develop</label><br/>
                 B.<input  type="radio" [value]="ques.option2" name="option"/>
-                <label> {{ques.option2}}</label><br/>
+                <label> Designing the application based on the objects discovered when analysing the problem</label><br/>
                 C.<input  type="radio" [value]="ques.option3" name="option"/>
-                <label> {{ques.option3}}</label><br/>
+                <label> Writing an algorithm before writing your program and having a test plan</label><br/>
                 D.<input  type="radio" [value]="ques.option4" name="option"/>
-                <label> {{ques.option4}}</label><br/>
+                <label> Writing a program composed of Java classes</label><br/>
                 <br/>
                 </div>
             </form>
@@ -24,9 +24,9 @@
         </div>
         <div id="answersDiv">
             <h2>View your result below!</h2>
-            <h4 id="eachAnswer" *ngFor="let msg of msgArray">{{msg}}</h4>
+            <h4 id="eachAnswer" *ngFor="let msg of msgArray">8/10</h4>
         </div>
         <div id="resultDiv">
-            <h4 id="resultH4">{{resultMessage}}</h4>
+            <h4 id="resultH4">Pass</h4>
         </div>
 </div>
